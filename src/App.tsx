@@ -1,3 +1,4 @@
+import { InfoCircledIcon, QuestionMarkIcon } from '@radix-ui/react-icons'
 import {
   Callout,
   Card,
@@ -16,14 +17,12 @@ const sortedTerms = terms.toSorted((a, b) => a.term.localeCompare(b.term))
 function App() {
   return (
     <Flex direction="column" align="center" py="9" px="6">
-      <Heading size="8" className="stagger opacity-0">
-        개발 용어 한글 표기법, 발음
-      </Heading>
+      <Heading size="8">개발 용어 한글 표기법, 발음</Heading>
 
-      <Callout.Root mt="6" color="blue" className="stagger opacity-0">
-        {/* <Callout.Icon>
+      <Callout.Root mt="6" color="blue">
+        <Callout.Icon>
           <InfoCircledIcon />
-        </Callout.Icon> */}
+        </Callout.Icon>
         <Callout.Text>
           외래어 표기법, 공식 문서의 한글 표기법, 영어 사전의 발음 기호,
           제작자의 견해, 영어권 영상/음원 등을 기반으로 합니다.
@@ -63,7 +62,7 @@ function App() {
                 </Heading>
                 {unopinionated && (
                   <Tooltip content="Unopinionated">
-                    {/* <QuestionMarkIcon /> */}
+                    <QuestionMarkIcon />
                   </Tooltip>
                 )}
               </Flex>

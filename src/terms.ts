@@ -176,7 +176,7 @@ export const terms: Array<Term> = [
       references: [
         {
           label: 'YouTube (Chrome for Developers)',
-          url: 'https://www.youtube.com/watch?v=g9Qff0b-lHk',
+          url: 'https://youtu.be/g9Qff0b-lHk?si=VH5hE4kiztNnMakg&t=75',
         },
       ],
     },
